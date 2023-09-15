@@ -40,6 +40,10 @@ app.get("/enqueue-job-sql", async (req, res) => {
 
 The `timer.js` file contains an epoch timestamp used to track when the queue executes and when you receive a normal response from the endpoint. It is implemented to test if the queue is executing asynchronously and if the response from the endpoint is not waiting for the complete execution of the queue.
 
+## Enviroment Varriables
+
+Edit .env.example to .env, set your database parameters in the varriables, the database dialect used is postgres sql, if you need to use sqlite, then read the main better-queue documentation [here](https://github.com/diamondio/better-queue)
+
 ## Required Packages
 
 The following packages need to be installed as dependencies and devDependencies:
